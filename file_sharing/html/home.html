@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/assets.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="nav_bar">
+            <p class="site_name">Shuttle Share</p>
+            <button class="sign_out">Sign Out</button>
+        </div>
+        <div id="main_function">
+            <div class="logo_container"><img src="../assets/logo.png" alt="" class="logo"></div>
+            <p id="welcome"><span >Hello</span> <span style="color: white;" id="user"></span></p>
+            <hr class="break_lines">
+            
+            <form id="upload_form">
+                <input type="file" id="file" placeholder="Select File">
+                <button type="submit" id="submit_btn">Upload</button>
+            </form>
+            <form action="" class="wrapper">
+                <input type="text" class="url_box">
+                <button type="submit" class="copy"><i class="fa-regular fa-copy"></i></button>
+            </form>
+            <hr class="break_lines">
+            <form action="" class="send_form">
+                <input type="email" class="send_box">
+                <button type="submit" class="send_btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+        <div class="astronaut_up">
+            <a class = "image_link" download="" href="">
+                <div class="astronaut_rot">
+                    <img src="../assets/astronaut.png" class="astronaut" width="300px" height="300px">
+                </div>
+            </a>
+        </div>
+        <div class="about_us">
+            <a class="link" href="">About Us</a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module">
+        import { check_path } from "../scripts/file_storage.js"
+        let test_head = document.getElementById('user')
+        let signout = document.querySelector('.sign_out')
+        let usercreds = JSON.parse(sessionStorage.getItem("user-creds"));
+        let userinfo = JSON.parse(sessionStorage.getItem("user-info"));
+
+        var typed = new Typed("#user",{
+            strings: [userinfo.username],
+            typeSpeed: 200,
+            loop: false
+        })
+
+        let SignOut = () =>{
+            sessionStorage.removeItem("user-creds");
+            sessionStorage.removeItem("user-info");
+            window.location.href = "../index.html"
+        }
+
+        let CheckRead = () =>{
+            if (!sessionStorage.getItem("user-creds"))
+                window.location.href = "../index.html"
+        }
+        window.addEventListener('load', ()=>{
+            check_path();
+        });
+
+        signout.addEventListener("click",SignOut)
+        window.addEventListener('load',CheckRead)
+
+    </script>
+    <script src="../scripts/file_storage.js" type="module"></script>
+
+    <!--<script src="../scripts/animation.js" type="module"></script> -->
+    <script src="https://kit.fontawesome.com/7238e061a2.js" crossorigin="anonymous"></script>
+</body>
+</html>

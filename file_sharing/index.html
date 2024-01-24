@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Sign In | ShuttleShare</title>
+        <link rel="stylesheet" href="../css/sign_in.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Overpass:ital,wght@1,100&family=Poppins:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="parentContainer">
+            <div class="miscContainer">
+                <video autoplay muted loop src="../assets/demovid.mp4" width="500px"></video>
+            </div>
+            <div class="mainContainer">
+                <div class="status">
+                    <h5 class="status_text"></h5>
+                </div>
+                <div class="container">
+                    <div class="mainFormHeader">
+                        <img src="../assets/logo.png" title="Shuttle Share">
+                        <h class="appName">Shuttle Share</h>
+                    </div>
+                    <div action="" id="sign_in">
+                        <h class="SignInText">Sign In</h>
+                        <form class="inputGroup">
+                            <input id="emailInp" type = "email" class="input_field" placeholder="Email" required>
+                            <input id="passInp" type = "password" class="input_field" placeholder="password" required>
+                            <button class="submit_btn" type="submit">Let's Go!</button>
+                        </form>
+                        <p class="signUp">New to Shuttle Share? <a href="./html/sign_up.html">Sign Up.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="../scripts/login.js" type="Module"></script>
+    <script src="../scripts/sign_up.js" type="Module"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.astronaut_up{
+    display: none;
+    background-color: blue;
+    position: relative;
+    transition: 1s ease-in-out top;
+    top: 150px;
+}
+
+.astronaut_rot{
+    display: none;
+    background-color: aqua;
+    animation-name: animate_astronaut_rot;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes animate_astronaut_rot{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(19deg);
+    }
+
+}
+
+@media on-scereen and (max-width: 420px){
+    .astronaut_up{
+        top: 100px
+    }
+}

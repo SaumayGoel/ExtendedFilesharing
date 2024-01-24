@@ -1,0 +1,303 @@
+html{
+    margin: 0;
+    background: url("../assets/bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+.site_name{
+    color: white;
+    font-size: clamp(2rem, 3vw, 4rem);
+    margin: 0px;
+}
+
+.image_link:hover{
+    cursor: pointer;
+}
+
+.sign_out{
+    font-size: clamp(0.1rem, .9rem, 5rem);
+    height: 30px;
+    width: 20%;
+    border: none;
+    color: aliceblue;
+    background-color: #18c457;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav_bar{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo_container{
+    margin: 5px auto;
+    width: 20%;
+}
+
+.logo{
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+.sign_out:hover{
+    background-color: #1CDF63;
+    color: white;
+}
+
+.sign_out:active{
+    background-color: #18c457;
+    color: white;
+}
+
+.main_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    margin: 40px auto;
+    border-radius: 8px;
+    align-items: center;
+    border: 2px solid #1CDF63;
+}
+
+.hello{
+    color: white;
+}
+
+#sub_container_A{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px;
+}
+
+#main_function{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    background: linear-gradient(to top,black,#789a754d);
+    justify-content: center;
+    justify-items: center;
+    margin: 5px;
+}
+
+#welcome{
+    font-size: clamp(.4rem, 10vh, 3rem);
+    color: #1CDF63;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0px auto;
+}
+
+.break_lines{
+    width: 85%;
+    border-color: #292929;
+    margin: 0.8em auto;
+    border-width: 0.1px;
+}
+
+#upload_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#file{
+    height: 70px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(206, 206, 206);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border-style:2px solid;
+    border-radius: 10px;
+    border: none;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.url_box{
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 6.3vh;
+    width: 70%;
+    background-color: rgb(206, 206, 206);
+    border: 3px solid #18c457;
+    border-radius: 10px;
+    margin: 0px auto;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.url_box:focus{
+    outline: none;
+    border-color: #1CDF63;
+    
+}
+
+.copy{
+    position: absolute;
+    right:14.9%;
+    height:6.3vh;
+    width: 11%;
+    border:none;
+    border-radius: 10px;
+    background-color: #18c457;
+    color:white;
+    font-size: 27px;
+}
+
+.copy:hover{
+    font-size: 29px;
+    font-weight: 600;
+    background-color: #1CDF63;
+}
+
+.copy:active{
+    background-color: #18c457;
+}
+
+::-webkit-file-upload-button{
+    height: 70px;
+    border:none;
+    background-color: #18c457;
+    color: aliceblue;
+}
+#file:hover{
+    background-color: white;
+}
+::-webkit-file-upload-button:hover{
+    background-color: #1CDF63;
+    color: white;
+}
+::-webkit-file-upload-button:active{
+    background-color: #18c457;
+    color: white;
+}
+
+#submit_btn{
+    display: block;
+    width: 70%;
+    height: 6.3vh;
+    margin: 10px auto;
+    font-size: 20px;
+    border-radius: 7px;
+    border:none;
+    background-color: #18c457;
+    color: aliceblue;
+}
+
+#submit_btn:hover{
+    background-color: #1CDF63;
+    color: white;
+}
+
+#submit_btn:active{
+    background-color: #18c457;
+    color: aliceblue;
+}
+
+.send_form{
+    position: relative;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+}
+
+.send_box{
+    box-sizing: border-box;
+    height: 6.3vh;
+    width: 70%;
+    background-color: rgb(206, 206, 206);
+    border: 3px solid #18c457;
+    border-radius: 10px;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+.send_box:focus{
+    outline: none;
+    border-color: #1CDF63;
+}
+
+.send_btn{
+    position: absolute;
+    right: 14.9%;
+    height: 6.3vh;
+    width: 11%;
+    border:none;
+    border-radius: 10px;
+    background-color: #18c457;
+    color:white;
+    font-size: 23px;
+}
+
+.send_btn:active{
+    background-color: #18c457;
+}
+
+.send_btn:hover{
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #1CDF63;
+}
+
+.about_us{
+    box-sizing: border-box;
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.656);
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em;
+}
+
+.link{
+    color:aliceblue;
+    font-size: 1rem;
+    padding: 0.4em;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.link:hover{
+    color: #1CDF63;
+    font-size: 1.015rem
+}
+
+@media (max-width: 870px){
+    .main_container{
+        width: 85%;
+        border: none;
+        margin:0px;
+    }
+}
+
+@media (max-width: 480px){
+    .main_container{
+        width: 100%;
+    } 
+}
