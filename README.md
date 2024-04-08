@@ -1,6 +1,6 @@
 # Extended Filesharing
 
-<img src="Screenshots/logo.png" alt="QuickMarkLogo" title="QuickMark" align="right" height="100" />
+<img src="file_sharing/assets/logo.png" alt="ShuttleShareLogo" title="ShuttleShare" align="right" height="100" />
 
 Deployed Link: https://extendedfilesharing.vercel.app/index.html
 
@@ -9,9 +9,8 @@ File Sharing App
 :star: If you liked my project, please consider starring this repository. Your support motivates me to continue improving it!
 
 [ShuttleShare](https://extendedfilesharing.vercel.app/index.html) is an intuitive and robust file-sharing application designed for effortless file uploads and seamless sharing experiences. With ShuttleShare, you can effortlessly upload your files to your account and generate shareable links that can be easily distributed to others. However, we understand that manually copying links and switching between apps can be cumbersome. That's where our convenient "Zap Share" feature comes in. Simply upload your file and enter the email address of the intended recipient, who must be a registered user. This streamlined process saves you time and effort, ensuring a smooth sharing experience for all users.
-<div align="left">
-  <img src="Screenshots/QuickMarkSS-PC.png" alt="QuickMark_md" title="QuickMark" height="390" style="margin-right: 20px;">
-  <img src="Screenshots/Mobile.jpeg" alt="QuickMark_md" title="QuickMark" height="450">
+
+<img width="1438" alt="Screenshot 2024-04-09 at 2 09 01 AM" src="https://github.com/Saumay-Goel/ExtendedFilesharing/assets/144949928/97b1f66f-e748-40c0-838c-82704aad2a56">
 </div>
 
 <div>
